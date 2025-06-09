@@ -4,7 +4,6 @@
  * take back the command.
  */
 public interface Command {
-
     void execute();
     void undo();
 }
