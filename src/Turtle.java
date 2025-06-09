@@ -96,7 +96,7 @@ public class Turtle {
     /**
      * lift the pen so it stops drawing
      */
-    public void penUp() {
+    public void LiftPen() {
         pen.up();
     }
 
