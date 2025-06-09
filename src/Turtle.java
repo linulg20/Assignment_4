@@ -1,3 +1,4 @@
+// Turtle.java
 public class Turtle {
     private double x, y, angle;
     private final Pen pen;
@@ -16,29 +17,9 @@ public class Turtle {
         this.angle  = 0;
     }
 
-    /**
-     * get the current x position of the turtle
-     * @return x coordinate
-     */
-    public double getX() {
-        return x;
-    }
-
-    /**
-     * get the current y position of the turtle
-     * @return y coordinate
-     */
-    public double getY() {
-        return y;
-    }
-
-    /**
-     * get the angle the turtle is facing
-     * @return angle in degrees
-     */
-    public double getAngle() {
-        return angle;
-    }
+    public double getX()     { return x; }
+    public double getY()     { return y; }
+    public double getAngle() { return angle; }
 
     /**
      * move the turtle forward by dist without drawing
@@ -61,48 +42,33 @@ public class Turtle {
         y = newY;
     }
 
-    /**
-     * set turtle to a new position without drawing
-     * @param x new x coordinate
-     * @param y new y coordinate
-     */
+    /** set turtle to a new position without drawing */
     public void setPosition(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
-    /**
-     * set turtle facing angle in degrees, normalized to 0-359
-     * @param angle new angle in degrees
-     */
+    /** set turtle facing angle in degrees, normalized to 0-359 */
     public void setAngle(double angle) {
         this.angle = (angle % 360 + 360) % 360;
     }
 
-    /**
-     * prints the current canvas to the screen
-     */
+    /** prints the current canvas to the screen */
     public void show() {
         canvas.print();
     }
 
-    /**
-     * clears the canvas to all spaces
-     */
+    /** clears the canvas to all spaces */
     public void clear() {
         canvas.clear();
     }
 
-    /**
-     * lift the pen so it stops drawing
-     */
+    /** lift the pen so it stops drawing */
     public void LiftPen() {
         pen.up();
     }
 
-    /**
-     * put the pen down so it starts drawing
-     */
+    /** put the pen down so it starts drawing */
     public void penDown() {
         pen.down();
     }
