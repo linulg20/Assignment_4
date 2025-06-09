@@ -1,12 +1,12 @@
 
-public class ECommand extends CompositeCommand {
+public class CommandE extends CompositeCommand {
     /**
      * create e command that draws 3 horizontal lines of length 3*size
      * and two vertical lines of length size starts at top left corner
      * @param t turtle to draw with
      * @param size scale factor for the letter
      */
-    public ECommand(Turtle t, double size) {
+    public CommandE(Turtle t, double size) {
         double e = 3 * size;
         double v = size;
 
