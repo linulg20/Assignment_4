@@ -1,6 +1,6 @@
 
 
-public class SCommand extends CompositeCommand {
+public class CommandS extends CompositeCommand {
 
      /**
      *  * Draws S  by turning and drawinf
@@ -12,7 +12,7 @@ public class SCommand extends CompositeCommand {
       * @param size the scale factor for the letter
      * @param t the Turtle used to draw
      */
-    public SCommand(Turtle t, double size) {
+    public CommandS(Turtle t, double size) {
         double v1  = 3 * size;
         double v = size;
         add(new TurnCommand(t,   0));
